@@ -1,0 +1,87 @@
+@startuml
+skinparam monochrome true
+
+node "empty"
+node "A"
+node "B"
+node "C"
+node "AA"
+node "AB"
+node "AC"
+node "BA"
+node "BB"
+node "BC"
+node "CA"
+node "CB"
+node "CC"
+node "AAA"
+node "AAB"
+node "AAC"
+node "ABA"
+node "ABB"
+node "ABC"
+node "ACA"
+node "ACB"
+node "ACC"
+node "BAA"
+node "BAB"
+node "BAC"
+node "BBA"
+node "BBB"
+node "BBC"
+node "BCA"
+node "BCB"
+node "BCC"
+node "CAA"
+node "CAB"
+node "CAC"
+node "CBA"
+node "CBB"
+node "CBC"
+node "CCA"
+node "CCB"
+node "CCC"
+
+empty--A
+empty--B
+empty--C
+
+A--AA
+A--AB
+A--AC
+B--BA
+B--BB
+B--BC
+C--CA
+C--CB
+C--CC
+
+AA--AAA
+AA--AAB
+AA--AAC
+AB--ABA
+AB--ABB
+AB--ABC
+AC--ACA
+AC--ACB
+AC--ACC
+BA--BAA
+BA--BAB
+BA--BAC
+BB--BBA
+BB--BBB
+BB--BBC
+BC--BCA
+BC--BCB
+BC--BCC
+CA--CAA
+CA--CAB
+CA--CAC
+CB--CBA
+CB--CBB
+CB--CBC
+CC--CCA
+CC--CCB
+CC--CCC
+
+@enduml
