@@ -13,10 +13,13 @@ def bfs(patterns):
         # スタックから要素を取り出す
         string = stack.pop()
 
+        # 停止条件
         if len(string) > 3:
             continue
-
+        # 処理
         patterns.append(string)
+
+        # 次の探索に移動。次の探索パターンをスタックに積む。
         for rune in ['A', 'B', 'C']:
             stack.append(string+rune)
 

@@ -12,10 +12,12 @@ def bfs(patterns):
     while not q.empty():
         # スタックから要素を取り出す
         string = q.get()
+        # 停止条件
         if len(string) > 3:
             continue
-
+        # 処理
         patterns.append(string)
+        # 次の探索に移動。次の探索パターンをキューに積む。
         for rune in ['A', 'B', 'C']:
             q.put(string+rune)
 
